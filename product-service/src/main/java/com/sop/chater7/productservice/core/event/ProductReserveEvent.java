@@ -1,0 +1,13 @@
+package com.sop.chater7.productservice.core.event;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class ProductReserveEvent {
+    private final String productId;
+    private final int quantity;
+    private final String orderId;
+    private final  String userId;
+}
